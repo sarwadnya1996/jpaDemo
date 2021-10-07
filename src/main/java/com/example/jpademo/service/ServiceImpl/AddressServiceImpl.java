@@ -14,19 +14,14 @@ import java.util.List;
 @Service
 public class AddressServiceImpl implements AddressService {
     @Autowired
-    UserRepository addressRepository;
+    AddressRepository addressRepository;
     @Override
-    public void saveAddress(Address address) {
-
-
-
-
-        
+    public void saveAddress(Address address)    {
 
 
             addressRepository.save(address);
         }
 
 
-    }
+
 }
